@@ -29,7 +29,7 @@ const Header = ({ siteTitle }: IProps) => (
           }}
         >
           {siteTitle}
-         </Link>
+        </Link>
       </h1>
     </div>
   </header>
