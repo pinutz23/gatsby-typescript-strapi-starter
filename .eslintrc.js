@@ -1,5 +1,6 @@
 module.exports = {
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
+  plugins: ["@typescript-eslint", "react-hooks", "prettier"],
   extends: [
     "airbnb-typescript",
     "airbnb/hooks",
@@ -15,6 +16,7 @@ module.exports = {
     },
   },
   rules: {
+    "prettier/prettier": "error"
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
   },

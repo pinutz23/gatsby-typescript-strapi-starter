@@ -11,7 +11,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface IMeta {
-  name: string
+  name: number
   content: any
   property?: undefined
 }
