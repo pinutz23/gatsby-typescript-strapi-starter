@@ -1,28 +1,22 @@
+// https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app
 module.exports = {
-  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
-  plugins: ["@typescript-eslint", "react-hooks", "prettier"],
-  extends: [
-    "airbnb-typescript",
-    "airbnb/hooks",
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended",
     "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
+    "prettier/react"
   ],
-  parserOptions: {
-    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: "module", // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true, // Allows for the parsing of JSX
-    },
-  },
-  rules: {
+  "plugins": [
+    "jsx-a11y",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "prettier/prettier": "error"
-    // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
-    // e.g. "@typescript-eslint/explicit-function-return-type": "off",
   },
-  settings: {
-    react: {
-      version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
+  "settings": {
+    "react": {
+      "version": "detect",
     },
   },
 }
